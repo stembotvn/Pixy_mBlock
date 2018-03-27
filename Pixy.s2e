@@ -1,0 +1,138 @@
+{
+  "extensionName": "PixyCAM",
+  "description": "Pixy CMU CAM - Arduino Mode Only",
+  "version": "1.0.0",
+  "author": "STEMbot.vn",
+  "homepage": "http://stembot.vn",
+  "sort":0,
+  "javascriptURL":"js/Pixy.js",
+    "firmware":"1.0",
+    "extensionPort":0,
+  "blockSpecs": [
+    [
+      "h",
+      "Pixy Camera Program",
+      "runArduino",
+      {
+        "setup": "",
+        "inc": "",
+        "def": "",
+        "work": "",
+        "loop": ""
+      }
+    ],
+   
+  [
+    "R",
+    "Get objects",
+    "getObjects",
+     0,
+      {
+        "inc" : "#include <SPI.h>\n#include \"Pixy.h\"\n",
+        "def" : "Pixy pixy;\n",
+        "setup" : "pixy.init();\n",
+        "work" : "pixy.getBlocks()",
+        "loop" : ""
+      }
+    ],
+  [
+    "R",
+    "Get signature of object No. %n ",
+    "getSignature",
+     0,
+      {
+        "inc" : "#include <SPI.h>\n#include \"Pixy.h\"\n",
+        "def" : "Pixy pixy;\n",
+        "setup" :  "pixy.init();\n",
+        "work" : "pixy.block[{0}].signature",
+        "loop" : ""
+      }
+    ],
+    [
+    "R",
+    "Get x location of object No. %n ",
+    "getX",
+     0,
+      {
+        "inc" : "#include <SPI.h>\n#include \"Pixy.h\"\n",
+        "def" : "Pixy pixy;\n",
+        "setup" :  "pixy.init();\n",
+        "work" : "pixy.block[{0}].x",
+        "loop" : ""
+      }
+    ],
+    [
+    "R",
+    "Get y location of object No. %n ",
+    "getY",
+     0,
+      {
+        "inc" : "#include <SPI.h>\n#include \"Pixy.h\"\n",
+        "def" : "Pixy pixy;\n",
+        "setup" :  "pixy.init();\n",
+        "work" : "pixy.block[{0}].y",
+        "loop" : ""
+      }
+    ],
+    [
+    "R",
+    "Get width of object No. %n ",
+    "getWidth",
+     0,
+      {
+        "inc" : "#include <SPI.h>\n#include \"Pixy.h\"\n",
+        "def" : "Pixy pixy;\n",
+        "setup" : "pixy.init();\n",
+        "work" : "pixy.block[{0}].width",
+        "loop" : ""
+      }
+    ],
+  [
+    "R",
+    "Get height of object No. %n ",
+    "getHeight",
+     0,
+      {
+        "inc" : "#include <SPI.h>\n#include \"Pixy.h\"\n",
+        "def" : "Pixy pixy;\n",
+        "setup" : "pixy.init();\n",
+        "work" : "pixy.block[{0}].height",
+        "loop" : ""
+      }
+    ],
+  [
+    "R",
+    "Get Angle of object No. %n",
+    "getWidth",
+     0,
+      {
+        "inc" : "#include <SPI.h>\n#include \"Pixy.h\"\n",
+        "def" : "Pixy pixy;\n",
+        "setup" : "pixy.init();\n",
+        "work" : "pixy.block[{0}].angle",
+        "loop" : ""
+      }
+    ],
+  [
+    "w",
+    "Serial Print data of object No. %n ",
+    "printObject",
+     0,
+      {
+        "inc" : "#include <SPI.h>\n#include \"Pixy.h\"\n",
+        "def" : "Pixy pixy;\n",
+        "setup" : "pixy.init();\n",
+        "work" : "pixy.block[{0}].print();",
+        "loop" : ""
+      }
+    ]
+  ],
+  "menus": {  
+  },
+  "values":{
+  
+  },
+  "translators":{
+          
+  }
+}
