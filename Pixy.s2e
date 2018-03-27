@@ -44,7 +44,7 @@
         "inc" : "#include <SPI.h>\n#include \"Pixy.h\"\n",
         "def" : "Pixy pixy;\n",
         "setup" :  "pixy.init();\n",
-        "work" : "pixy.block[{0}].signature",
+        "work" : "pixy.blocks[{0}].signature",
         "loop" : ""
       }
     ],
@@ -57,7 +57,7 @@
         "inc" : "#include <SPI.h>\n#include \"Pixy.h\"\n",
         "def" : "Pixy pixy;\n",
         "setup" :  "pixy.init();\n",
-        "work" : "pixy.block[{0}].x",
+        "work" : "pixy.blocks[{0}].x",
         "loop" : ""
       }
     ],
@@ -70,7 +70,7 @@
         "inc" : "#include <SPI.h>\n#include \"Pixy.h\"\n",
         "def" : "Pixy pixy;\n",
         "setup" :  "pixy.init();\n",
-        "work" : "pixy.block[{0}].y",
+        "work" : "pixy.blocks[{0}].y",
         "loop" : ""
       }
     ],
@@ -83,7 +83,7 @@
         "inc" : "#include <SPI.h>\n#include \"Pixy.h\"\n",
         "def" : "Pixy pixy;\n",
         "setup" : "pixy.init();\n",
-        "work" : "pixy.block[{0}].width",
+        "work" : "pixy.blocks[{0}].width",
         "loop" : ""
       }
     ],
@@ -96,7 +96,7 @@
         "inc" : "#include <SPI.h>\n#include \"Pixy.h\"\n",
         "def" : "Pixy pixy;\n",
         "setup" : "pixy.init();\n",
-        "work" : "pixy.block[{0}].height",
+        "work" : "pixy.blocks[{0}].height",
         "loop" : ""
       }
     ],
@@ -109,7 +109,7 @@
         "inc" : "#include <SPI.h>\n#include \"Pixy.h\"\n",
         "def" : "Pixy pixy;\n",
         "setup" : "pixy.init();\n",
-        "work" : "pixy.block[{0}].angle",
+        "work" : "pixy.blocks[{0}].angle",
         "loop" : ""
       }
     ],
@@ -121,8 +121,8 @@
       {
         "inc" : "#include <SPI.h>\n#include \"Pixy.h\"\n",
         "def" : "Pixy pixy;\n",
-        "setup" : "pixy.init();\nSerial.begin(115200);\n",
-        "work" : "pixy.block[{0}].print();",
+        "setup" : "Serial.begin(115200);\n",
+        "work" : "pixy.blocks[{0}].print();\n",
         "loop" : ""
       }
     ]
