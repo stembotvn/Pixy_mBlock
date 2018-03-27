@@ -11,3 +11,7 @@ http://charmedlabs.com/default/pixy-cmucam5/
 ## Pixy mBLock
 This repo is source code to create plugin allow programming Arduino/Robot using Pixy Camera with Scratch 2.0 language. Even a kids can make fantastic project with computer vision technology. 
 
+## Installation Pixy in mBlock
+- Go to Extensions/Mangage extensions
+- Search in Available tab with key: Pixy
+- Download and Start to code with Pixy
