@@ -121,7 +121,7 @@
       {
         "inc" : "#include <SPI.h>\n#include \"Pixy.h\"\n",
         "def" : "Pixy pixy;\n",
-        "setup" : "pixy.init();\n",
+        "setup" : "pixy.init();\nSerial.begin(115200);\n",
         "work" : "pixy.block[{0}].print();",
         "loop" : ""
       }
