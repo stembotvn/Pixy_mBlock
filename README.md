@@ -8,3 +8,6 @@ Pixy can connect directly to Arduino via ISP Port (SPI), easy to code.
 See here for more detail: 
 http://charmedlabs.com/default/pixy-cmucam5/
 
+## Pixy mBLock
+This repo is source code to create plugin allow programming Arduino/Robot using Pixy Camera with Scratch 2.0 language. Even a kids can make fantastic project with computer vision technology. 
+
