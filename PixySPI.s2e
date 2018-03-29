@@ -1,11 +1,11 @@
 {
-  "extensionName": "PixyCAM",
-  "description": "Pixy CMU CAM - Arduino Mode Only",
+  "extensionName": "PixyCAM_SPI",
+  "description": "Pixy Camera on ICSP Port - Arduino Mode Only",
   "version": "1.0.0",
   "author": "STEMbot.vn",
   "homepage": "http://stembot.vn",
   "sort":0,
-  "javascriptURL":"js/Pixy.js",
+  "javascriptURL":"js/PixySPI.js",
     "firmware":"1.0",
     "extensionPort":0,
   "blockSpecs": [
